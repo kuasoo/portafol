@@ -1,230 +1,87 @@
-/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #f0f0f0; /* Texto claro */
     margin: 0;
-    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: #0a0a23;
+    color: #e0e0e0;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    padding: 2rem;
-    background-color: #333; /* Fondo del encabezado oscuro */
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    padding: 4rem 1rem;
+    background: #0f1130;
 }
 
 h1 {
-    color: #ffcc00; /* Color amarillo retro */
-}
-
-p {
-    color: #cccccc; /* Color de texto suave */
-}
-
-section {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
+    color: #3ea2ff;
+    font-size: 2.8rem;
 }
 
 h2 {
-    color: #ffcc00; /* Color amarillo retro */
-}
-
-.about-content, .projects-container, .certificates-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.about-content img, .project img, .certificate img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.skill {
-    background-color: #333;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 48%; /* Ajuste para dos cuadros por fila */
-    box-sizing: border-box;
+    color: #4aa8ff;
+    font-size: 2.2rem;
     text-align: center;
+    margin-top: 3rem;
 }
 
-.skill h3 {
-    color: #ffcc00; /* Color amarillo retro */
-    margin-bottom: 0.5rem;
+p {
+    line-height: 1.7;
+    font-size: 1.1rem;
 }
 
-.skill p {
-    color: #cccccc; /* Color de texto suave */
+/* CONTENEDORES */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
+.section-box {
+    background: #12142e;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* TARJETAS */
+.card {
+    background: #181a33;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* BOTÓN */
 .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    color: #ffffff;
-    background-color: #ff3333; /* Color rojo retro */
-    border: none;
-    border-radius: 4px;
+    padding: 0.7rem 1.4rem;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
 .btn:hover {
-    background-color: #cc0000; /* Rojo más oscuro al pasar el cursor */
+    background: #0056b3;
 }
 
+/* FOOTER */
 footer {
-    background-color: #333;
     text-align: center;
-    padding: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-.social-links a {
-    color: #ffcc00; /* Color amarillo retro */
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #333;
-    color: #fff;
-}
-
-textarea {
-    resize: vertical;
-}
-/* Sección Certificados */
-.certificates-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.certificate {
-    background-color: #333;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 300px; /* Ajusta este tamaño según tus necesidades */
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.certificate img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.certificate h3 {
-    color: #ffcc00; /* Color amarillo retro */
-    margin-bottom: 0.5rem;
-}
-
-.certificate p {
-    color: #cccccc; /* Color de texto suave */
-    margin-bottom: 1rem;
-}
-
-.certificate .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: #ffffff;
-    background-color: #ff3333; /* Color rojo retro */
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.certificate .btn:hover {
-    background-color: #cc0000; /* Rojo más oscuro al pasar el cursor */
-}
-/* Estilo para la sección de información de contacto */
-#contact-info {
     padding: 2rem;
-    background-color: #f4f4f4;
-    color: #333;
+    background: #0f1130;
+    margin-top: 3rem;
 }
 
-#contact-info h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
 
-.contact-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-info-item {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.contact-info-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact-info-item p {
-    font-size: 1rem;
-}
-
-.contact-info-item a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.contact-info-item a:hover {
-    text-decoration: underline;
-}
 
